@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,9 +25,7 @@ public class MainActivity extends AppCompatActivity {
              */
             if(name.length() < 3 || name.length() > 15) {
                 // we always start with false condition
-                Toast toast = Toast.makeText(getApplicationContext(),R.string.short_name,Toast.LENGTH_LONG);
-                toast.getView().setBackgroundColor(Color.parseColor("#F6AE2D"));
-                toast.show();
+                Toast.makeText(getApplicationContext(),R.string.short_name,Toast.LENGTH_LONG).show();
             }
             else {
                 // save the data ( name string ) in intent extras
