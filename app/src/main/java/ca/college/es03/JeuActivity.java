@@ -4,7 +4,6 @@ package ca.college.es03;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.Color;
-import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,11 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -38,6 +35,7 @@ public class JeuActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // set action menu items
         switch (item.getItemId()) {
             case R.id.action_visit_site:
                 // we start a new external uri intent
@@ -83,12 +81,15 @@ public class JeuActivity extends AppCompatActivity {
         // random state from states array
         Etat etat = mlisteEtats.get(new Random().nextInt(mlisteEtats.size()));
         TextView name = findViewById(R.id.username);
+        // store view variables by IDs
         TextView capitalName = findViewById(R.id.capital_name);
         TextView stateName = findViewById(R.id.state_name);
         String capital = etat.getCapitale();
         ImageView stateImage = findViewById(R.id.state_img);
         Bundle extras = getIntent().getExtras();
         String drawable = etat.getDrawable();
+
+        // the button which we use to show the result
         Button isValid = findViewById(R.id.button);
         if (extras != null) {
             // set the textview to our user's name
@@ -98,21 +99,30 @@ public class JeuActivity extends AppCompatActivity {
             capitalName.setText(capital);
         }
         site = etat.getWikiUrl();
+
+        // set the drawable image for the state
         stateImage.setImageResource(getResources().getIdentifier(drawable, "drawable", getPackageName()));
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         StateRecyclerView adapter = new StateRecyclerView(this, mlisteEtats);
+
+        // on state item clicked login
         StateRecyclerView.ItemClickListener itemClickListener = new StateRecyclerView.ItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
                 if(clickable) {
+                    // increase number of attempts ( tries )
                     attempts++;
+
+                    // check if the name of the state is not equal to the item in position
                     if(!Objects.equals(etat.getNom(), mlisteEtats.get(position).getNom())){
+                        // user couldn't get the right answer
                         isValid.setVisibility(View.VISIBLE);
                         isValid.setText(String.valueOf(attempts));
                         isValid.setBackgroundColor(Color.parseColor("#FF0000"));
                     }
                     else {
+                        // else show the win button
                         isValid.setVisibility(View.VISIBLE);
                         stateName.setVisibility(View.VISIBLE);
                         stateName.setText(etat.getNom());
