@@ -11,17 +11,16 @@
         android:id="@+id/name"
         android:layout_width="318dp"
         android:layout_height="51dp"
+        android:autofillHints="false"
         android:ems="10"
-        android:labelFor="@id/name"
         android:inputType="textPersonName"
+        android:labelFor="@id/name"
         android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/connect_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.80"
-        android:autofillHints="false" />
+        app:layout_constraintVertical_bias="0.50" />
 
     <Button
         android:id="@+id/connect_btn"
@@ -31,13 +30,13 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2"
-        app:layout_constraintVertical_bias="0.30" />
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintVertical_bias="0.10" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="403dp" />
+        app:layout_constraintGuide_begin="231dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

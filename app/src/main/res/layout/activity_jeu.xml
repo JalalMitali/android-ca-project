@@ -7,73 +7,130 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".JeuActivity">
-    <TextView
-        android:id="@+id/username"
-        android:layout_width="211dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:text=""
-        android:textAllCaps="true"
-        android:textColor="@color/teal_200"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
+    <LinearLayout
+        android:id="@+id/left"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintVertical_weight="0.33"
+        android:orientation="vertical"
+        app:layout_constraintVertical_bias="0.33"
+        app:layout_constraintBottom_toTopOf="@id/recycler_layout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintGuide_percent="0.75"
+            >
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:textColor="@color/purple_200"
+                        android:layout_width="@dimen/btn_width"
+                        android:layout_marginStart="16dp"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/name"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/state_img"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/accessibility_state"
+                android:scaleType="fitCenter"
+                android:src="@color/cardview_dark_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/username"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/username"
+                app:layout_constraintVertical_bias="0.9"
+                app:srcCompat="@drawable/ak"
+                tools:srcCompat="@drawable/ak" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="75dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
+        android:id="@+id/horizontal_guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="241dp" />
-
-    <ImageView
-        android:id="@+id/state_img"
-        android:layout_width="270dp"
-        android:layout_height="135dp"
-        android:adjustViewBounds="true"
-        android:contentDescription="@string/accessibility_state"
-        android:scaleType="fitCenter"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/username"
-        app:layout_constraintVertical_bias="0.156"
-        app:srcCompat="@android:drawable/btn_star_big_on" />
-
-    <TextView
-        android:id="@+id/state_name"
+        app:layout_constraintGuide_percent="0.5" />
+    <FrameLayout
+        android:id="@+id/right"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:textColor="@color/black"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/state_img"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/state_img"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toRightOf="@id/horizontal_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+    >
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="409dp"
-        android:id="@+id/recycler_view"
-        android:layout_height="487dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/state_img" />
+        <TextView
+            android:layout_marginTop="70dp"
+            android:padding="16dp"
+            android:width="@dimen/btn_width"
+            android:height="70dp"
+            android:id="@+id/capital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:textColor="@color/teal_700"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/button"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:text=""
+            android:visibility="invisible"
+            />
+        <TextView
+            android:layout_marginTop="45dp"
+            android:padding="16dp"
+            android:width="@dimen/btn_width"
+            android:height="70dp"
+            android:id="@+id/state_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="invisible"
+            android:textColor="@color/teal_700"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/recycler_layout"
+        app:layout_constraintVertical_weight="0.66"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:flow_verticalBias="0.66"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/left">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="129dp"
-        android:layout_height="46dp"
-        android:visibility="invisible"
-        android:text=""
-        app:layout_constraintBottom_toTopOf="@+id/state_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/username"
-        app:layout_constraintTop_toTopOf="parent" />
-    />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

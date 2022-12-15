@@ -2,7 +2,9 @@ package ca.college.es03;
 
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.graphics.Color;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,10 +12,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -28,6 +32,7 @@ public class JeuActivity extends AppCompatActivity {
     private static int attempts = 0;
     private static String site = "";
     private static boolean clickable = true;
+    private ConstraintSet mConstraintSet = new ConstraintSet();
     // Source de données
     private ArrayList<Etat> mlisteEtats;
 
@@ -40,6 +45,9 @@ public class JeuActivity extends AppCompatActivity {
                 startActivity(browserIntent);
                 return true;
             case R.id.action_reset:
+
+                clickable = true;
+                attempts = 0;
                 // we kill the activity to erase all data and restart it
                 finish();
                 startActivity(getIntent());
@@ -62,8 +70,11 @@ public class JeuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jeu);
-
-
+         View stateImg = findViewById(R.id.state_img);
+        if (getApplicationContext().getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+            stateImg.setScaleX(2);
+            stateImg.setScaleX(2);
+        }
         // Lire les données du fichier dans mlisteEtats
         mlisteEtats = Etat.lireDonnees(this, sNomFichier);
 
@@ -72,7 +83,8 @@ public class JeuActivity extends AppCompatActivity {
         // random state from states array
         Etat etat = mlisteEtats.get(new Random().nextInt(mlisteEtats.size()));
         TextView name = findViewById(R.id.username);
-        TextView stateNameView = findViewById(R.id.state_name);
+        TextView capitalName = findViewById(R.id.capital_name);
+        TextView stateName = findViewById(R.id.state_name);
         String capital = etat.getCapitale();
         ImageView stateImage = findViewById(R.id.state_img);
         Bundle extras = getIntent().getExtras();
@@ -81,9 +93,9 @@ public class JeuActivity extends AppCompatActivity {
         if (extras != null) {
             // set the textview to our user's name
             String value = extras.getString("name");
-            Toast.makeText(getApplicationContext(), drawable,Toast.LENGTH_LONG).show();
+
             name.setText(value);
-            stateNameView.setText(capital);
+            capitalName.setText(capital);
         }
         site = etat.getWikiUrl();
         stateImage.setImageResource(getResources().getIdentifier(drawable, "drawable", getPackageName()));
@@ -102,6 +114,8 @@ public class JeuActivity extends AppCompatActivity {
                     }
                     else {
                         isValid.setVisibility(View.VISIBLE);
+                        stateName.setVisibility(View.VISIBLE);
+                        stateName.setText(etat.getNom());
                         isValid.setText(String.valueOf(attempts));
                         isValid.setBackgroundColor(Color.parseColor("#00FF00"));
                         clickable = false;
