@@ -1,6 +1,7 @@
 package ca.college.es03;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -21,9 +22,11 @@ public class MainActivity extends AppCompatActivity {
             if there are less 3 three chars we skip
             otherwise we go to next activity
              */
-            if(name.length() < 3) {
+            if(name.length() < 3 || name.length() > 15) {
                 // we always start with false condition
-                Toast.makeText(getApplicationContext(),R.string.short_name,Toast.LENGTH_LONG).show();
+                Toast toast = Toast.makeText(getApplicationContext(),R.string.short_name,Toast.LENGTH_LONG);
+                toast.getView().setBackgroundColor(Color.parseColor("#F6AE2D"));
+                toast.show();
             }
             else {
                 // save the data ( name string ) in intent extras

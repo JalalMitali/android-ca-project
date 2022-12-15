@@ -15,6 +15,7 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:labelFor="@id/name"
+        android:hint="@string/name"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
