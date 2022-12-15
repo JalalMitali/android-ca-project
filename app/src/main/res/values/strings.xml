@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ES03 (########)</string>
+    <string name="connect">Se Connecter</string>
+    <string name="name">Nom</string>
+    <string name="website">Visit Website</string>
+    <string name="reset">Restart / Rest</string>
+    <string name="accessibility_state">State Name</string>
+    <string name="short_name">The name is very short try at least 3 characters!</string>
+</resources>

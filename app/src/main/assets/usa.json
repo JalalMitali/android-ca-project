@@ -1,0 +1,404 @@
+{
+    "etats": [
+        {
+            "nom": "Alaska",
+            "code": "ak",
+            "capitale": "Juneau",
+            "superficie": "1723337",
+            "union": "3 janvier 1959",
+            "wiki": "https://fr.wikipedia.org/wiki/Alaska"
+        },
+        {
+            "nom": "Alabama",
+            "code": "al",
+            "capitale": "Montgomery",
+            "superficie": "135767",
+            "union": "4 décembre 1819",
+            "wiki": "https://fr.wikipedia.org/wiki/Alabama"
+        },
+        {
+            "nom": "Arkansas",
+            "code": "ar",
+            "capitale": "Little Rock",
+            "superficie": "137732",
+            "union": "15 juin 1836",
+            "wiki": "https://fr.wikipedia.org/wiki/Arkansas"
+        },
+        {
+            "nom": "Arizona",
+            "code": "az",
+            "capitale": "Phoenix",
+            "superficie": "295234",
+            "union": "14 février 1912",
+            "wiki": "https://fr.wikipedia.org/wiki/Arizona"
+        },
+        {
+            "nom": "Californie",
+            "code": "ca",
+            "capitale": "Sacramento",
+            "superficie": "423972",
+            "union": "9 septembre 1850",
+            "wiki": "https://fr.wikipedia.org/wiki/Californie"
+        },
+        {
+            "nom": "Caroline du Sud",
+            "code": "sc",
+            "capitale": "Columbia",
+            "superficie": "82933",
+            "union": "23 mai 1788",
+            "wiki": "https://fr.wikipedia.org/wiki/Caroline_du_Sud"
+        },
+        {
+            "nom": "Colorado",
+            "code": "co",
+            "capitale": "Denver",
+            "superficie": "269601",
+            "union": "1 août 1876",
+            "wiki": "https://fr.wikipedia.org/wiki/Colorado"
+        },
+        {
+            "nom": "Connecticut",
+            "code": "ct",
+            "capitale": "Hartford",
+            "superficie": "14357",
+            "union": "9 janvier 1788",
+            "wiki": "https://fr.wikipedia.org/wiki/Connecticut"
+        },
+        {
+            "nom": "Dakota du Sud",
+            "code": "sd",
+            "capitale": "Pierre",
+            "superficie": "199729",
+            "union": "2 novembre 1889",
+            "wiki": "https://fr.wikipedia.org/wiki/Dakota_du_Sud"
+        },
+        {
+            "nom": "Delaware",
+            "code": "de",
+            "capitale": "Dover",
+            "superficie": "6446",
+            "union": "7 décembre 1787",
+            "wiki": "https://fr.wikipedia.org/wiki/Delaware"
+        },
+        {
+            "nom": "Floride",
+            "code": "fl",
+            "capitale": "Tallahassee",
+            "superficie": "170312",
+            "union": "3 mars 1845",
+            "wiki": "https://fr.wikipedia.org/wiki/Floride"
+        },
+        {
+            "nom": "Géorgie",
+            "code": "ga",
+            "capitale": "Atlanta",
+            "superficie": "153910",
+            "union": "2 janvier 1788",
+            "wiki": "https://fr.wikipedia.org/wiki/Géorgie_(États-Unis)"
+        },
+        {
+            "nom": "Hawaï",
+            "code": "hi",
+            "capitale": "Honolulu",
+            "superficie": "28313",
+            "union": "21 août 1959",
+            "wiki": "https://fr.wikipedia.org/wiki/Hawaï"
+        },
+        {
+            "nom": "Iowa",
+            "code": "ia",
+            "capitale": "Des Moines",
+            "superficie": "145746",
+            "union": "28 décembre 1846",
+            "wiki": "https://fr.wikipedia.org/wiki/Iowa"
+        },
+        {
+            "nom": "Idaho",
+            "code": "id",
+            "capitale": "Boise",
+            "superficie": "216443",
+            "union": "3 juillet 1890",
+            "wiki": "https://fr.wikipedia.org/wiki/Idaho"
+        },
+        {
+            "nom": "Illinois",
+            "code": "il",
+            "capitale": "Springfield",
+            "superficie": "149995",
+            "union": "3 décembre 1818",
+            "wiki": "https://fr.wikipedia.org/wiki/Illinois"
+        },
+        {
+            "nom": "Indiana",
+            "code": "in",
+            "capitale": "Indianapolis",
+            "superficie": "94326",
+            "union": "11 décembre 1816",
+            "wiki": "https://fr.wikipedia.org/wiki/Indiana"
+        },
+        {
+            "nom": "Kansas",
+            "code": "ks",
+            "capitale": "Topeka",
+            "superficie": "213100",
+            "union": "29 janvier 1861",
+            "wiki": "https://fr.wikipedia.org/wiki/Kansas"
+        },
+        {
+            "nom": "Kentucky",
+            "code": "ky",
+            "capitale": "Frankfort",
+            "superficie": "104656",
+            "union": "1 juin 1792",
+            "wiki": "https://fr.wikipedia.org/wiki/Kentucky"
+        },
+        {
+            "nom": "Louisiane",
+            "code": "la",
+            "capitale": "Baton Rouge",
+            "superficie": "135659",
+            "union": "30 avril 1812",
+            "wiki": "https://fr.wikipedia.org/wiki/Louisiane"
+        },
+        {
+            "nom": "Massachusetts",
+            "code": "ma",
+            "capitale": "Boston",
+            "superficie": "27336",
+            "union": "6 février 1788",
+            "wiki": "https://fr.wikipedia.org/wiki/"
+        },
+        {
+            "nom": "Maryland",
+            "code": "md",
+            "capitale": "Annapolis",
+            "superficie": "32131",
+            "union": "28 avril 1788",
+            "wiki": "https://fr.wikipedia.org/wiki/Massachusetts"
+        },
+        {
+            "nom": "Maine",
+            "code": "me",
+            "capitale": "Augusta",
+            "superficie": "91633",
+            "union": "15 mars 1820",
+            "wiki": "https://fr.wikipedia.org/wiki/Maine_(États-Unis)"
+        },
+        {
+            "nom": "Michigan",
+            "code": "mi",
+            "capitale": "Lansing",
+            "superficie": "250487",
+            "union": "26 janvier 1837",
+            "wiki": "https://fr.wikipedia.org/wiki/Michigan"
+        },
+        {
+            "nom": "Minnesota",
+            "code": "mn",
+            "capitale": "Saint Paul",
+            "superficie": "225163",
+            "union": "11 mai 1858",
+            "wiki": "https://fr.wikipedia.org/wiki/Minnesota"
+        },
+        {
+            "nom": "Minnesota",
+            "code": "mo",
+            "capitale": "Jefferson City",
+            "superficie": "180540",
+            "union": "10 août 1821",
+            "wiki": "https://fr.wikipedia.org/wiki/Minnesota"
+        },
+        {
+            "nom": "Mississippi",
+            "code": "ms",
+            "capitale": "Jackson",
+            "superficie": "125438",
+            "union": "10 décembre 1817",
+            "wiki": "https://fr.wikipedia.org/wiki/Mississippi_(État)"
+        },
+        {
+            "nom": "Montana",
+            "code": "mt",
+            "capitale": "Helena",
+            "superficie": "380831",
+            "union": "8 novembre 1889",
+            "wiki": "https://fr.wikipedia.org/wiki/Montana"
+        },
+        {
+            "nom": "Caroline du Nord",
+            "code": "nc",
+            "capitale": "Raleigh",
+            "superficie": "139391",
+            "union": "21 novembre 1789",
+            "wiki": "https://fr.wikipedia.org/wiki/Caroline_du_Nord"
+        },
+        {
+            "nom": "Dakota du Nord",
+            "code": "nd",
+            "capitale": "Bismarck",
+            "superficie": "183108",
+            "union": "2 novembre 1889",
+            "wiki": "https://fr.wikipedia.org/wiki/Dakota_du_Nord"
+        },
+        {
+            "nom": "Nebraska",
+            "code": "ne",
+            "capitale": "Lincoln",
+            "superficie": "200330",
+            "union": "1 mars 1867",
+            "wiki": "https://fr.wikipedia.org/wiki/Nebraska"
+        },
+        {
+            "nom": "New Hampshire",
+            "code": "nh",
+            "capitale": "Concord",
+            "superficie": "24214",
+            "union": "21 juin 1788",
+            "wiki": "https://fr.wikipedia.org/wiki/New_Hampshire"
+        },
+        {
+            "nom": "New Jersey",
+            "code": "nj",
+            "capitale": "Trenton",
+            "superficie": "22591",
+            "union": "18 décembre 1787",
+            "wiki": "https://fr.wikipedia.org/wiki/New_Jersey"
+        },
+        {
+            "nom": "Nouveau-Mexique",
+            "code": "nm",
+            "capitale": "Santa Fe",
+            "superficie": "314917",
+            "union": "6 janvier 1912",
+            "wiki": "https://fr.wikipedia.org/wiki/Nouveau-Mexique"
+        },
+        {
+            "nom": "Nevada",
+            "code": "nv",
+            "capitale": "Carson City",
+            "superficie": "286380",
+            "union": "31 octobre 1864",
+            "wiki": "https://fr.wikipedia.org/wiki/Nevada"
+        },
+        {
+            "nom": "New York",
+            "code": "ny",
+            "capitale": "Albany",
+            "superficie": "141297",
+            "union": "26 juillet 1788",
+            "wiki": "https://fr.wikipedia.org/wiki/État_de_New_York"
+        },
+        {
+            "nom": "Ohio",
+            "code": "oh",
+            "capitale": "Columbus",
+            "superficie": "116098",
+            "union": "1 mars 1803",
+            "wiki": "https://fr.wikipedia.org/wiki/Ohio"
+        },
+        {
+            "nom": "Oklahoma",
+            "code": "ok",
+            "capitale": "Oklahoma City",
+            "superficie": "181037",
+            "union": "16 novembre 1907",
+            "wiki": "https://fr.wikipedia.org/wiki/Oklahoma"
+        },
+        {
+            "nom": "Oregon",
+            "code": "or",
+            "capitale": "Salem",
+            "superficie": "254799",
+            "union": "14 février 1859",
+            "wiki": "https://fr.wikipedia.org/wiki/Oregon"
+        },
+        {
+            "nom": "Pennsylvanie",
+            "code": "pa",
+            "capitale": "Harrisburg",
+            "superficie": "119280",
+            "union": "12 décembre 1787",
+            "wiki": "https://fr.wikipedia.org/wiki/Pennsylvanie"
+        },
+        {
+            "nom": "Rhode Island",
+            "code": "ri",
+            "capitale": "Providence",
+            "superficie": "4001",
+            "union": "29 mai 1790",
+            "wiki": "https://fr.wikipedia.org/wiki/Rhode_Island"
+        },
+        {
+            "nom": "Tennessee",
+            "code": "tn",
+            "capitale": "Nashville",
+            "superficie": "109153",
+            "union": "1 juin 1796",
+            "wiki": "https://fr.wikipedia.org/wiki/Tennessee"
+        },
+        {
+            "nom": "Texas",
+            "code": "tx",
+            "capitale": "Austin",
+            "superficie": "695662",
+            "union": "29 décembre 1845",
+            "wiki": "https://fr.wikipedia.org/wiki/Texas"
+        },
+        {
+            "nom": "Utah",
+            "code": "ut",
+            "capitale": "Salt Lake City",
+            "superficie": "219882",
+            "union": "4 janvier 1896",
+            "wiki": "https://fr.wikipedia.org/wiki/Utah"
+        },
+        {
+            "nom": "Virginie",
+            "code": "va",
+            "capitale": "Richmond",
+            "superficie": "110787",
+            "union": "25 juin 1788",
+            "wiki": "https://fr.wikipedia.org/wiki/Virginie_(États-Unis)"
+        },
+        {
+            "nom": "Vermont",
+            "code": "vt",
+            "capitale": "Montpelier",
+            "superficie": "24906",
+            "union": "4 mars 1791",
+            "wiki": "https://fr.wikipedia.org/wiki/Vermont"
+        },
+        {
+            "nom": "Washington",
+            "code": "wa",
+            "capitale": "Olympia",
+            "superficie": "184661",
+            "union": "11 novembre 1889",
+            "wiki": "https://fr.wikipedia.org/wiki/Washington_(État)"
+        },
+        {
+            "nom": "Wisconsin",
+            "code": "wi",
+            "capitale": "Madison",
+            "superficie": "169635",
+            "union": "29 mai 1848",
+            "wiki": "https://fr.wikipedia.org/wiki/Wisconsin"
+        },
+        {
+            "nom": "Virginie Occidentale",
+            "code": "wv",
+            "capitale": "Charleston",
+            "superficie": "62756",
+            "union": "20 juin 1863",
+            "wiki": "https://fr.wikipedia.org/wiki/Virginie-Occidentale"
+        },
+        {
+            "nom": "Wyoming",
+            "code": "wy",
+            "capitale": "Cheyenne",
+            "superficie": "253335",
+            "union": "10 juillet 1890",
+            "wiki": "https://fr.wikipedia.org/wiki/Wyoming"
+        }
+    ]
+}
